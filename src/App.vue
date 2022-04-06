@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <HeaderSide />
+    <MainSide />
   </div>
 </template>
 
@@ -13,6 +14,7 @@ export default {
   name: 'App',
   components: {
     HeaderSide,
+    MainSide,
     
     
   }
@@ -20,12 +22,16 @@ export default {
 </script>
 
 <style lang="scss">
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 #app {
+  width: 100%;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  
-  color: #2c3e50;
-  margin-top: 60px;
+  -moz-osx-font-smoothing: grayscale; 
 }
 </style>

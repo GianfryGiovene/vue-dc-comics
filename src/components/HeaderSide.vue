@@ -27,11 +27,15 @@ export default {
 <style lang="scss"scoped>
 $blue-DC:#0282f9;
 header{
-    width: 100%;
-    height: 50px;
+    max-width: 1200px;
+    margin: auto;
+    height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    img{
+        width: 80px;
+    }
     ul{
         list-style-type: none;
         display: flex;
