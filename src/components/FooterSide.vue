@@ -1,5 +1,5 @@
 <template>
-    <footer>
+    <footer id="footer">
         <div class="container">
             <div class="flex-wrap">
                 <div class="flex-wrap-column">
@@ -46,8 +46,8 @@
         </div>
         <div class="container">
             <div class="flex-wrap">
-                <input type="button" value="SIGN-UP NOW!">
-                <ul class="flex-wrap">
+                <button>SIGN-UP NOW!</button>
+                <ul>
                     <li>FOLLOW US</li>
                     <li><img src="../assets/footer-facebook.png" alt=""></li>
                     <li><img src="../assets/footer-twitter.png" alt=""></li>
@@ -63,10 +63,13 @@
 <script>
 export default {
     name: 'FooterSide',
+    
 }
+
 </script>
 
 <style lang="scss" scoped>
+$blue-DC:#0282f9;
 footer{
     width: 100%;
     .container:first-child{
@@ -111,15 +114,33 @@ footer{
     .container:last-child{
         width: 100%;
         background-color: #303030;
+        padding: 20px;
         .flex-wrap{
             padding: 10px;
             max-width: 1200px;
             margin: auto;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            input
+            align-items: center;    
+        }
+        button{
+            color: #fff;
+            display: inline-block;
+            border: 2px solid $blue-DC;
+            padding: 8px;
+            background: none ;
+            cursor: pointer;
             
+        }
+        ul{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            li:first-child{
+                color: $blue-DC;
+                font-weight: 700;
+            }
         }
     }
 }

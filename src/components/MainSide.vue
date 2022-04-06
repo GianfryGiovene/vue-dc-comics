@@ -16,6 +16,7 @@ export default {
 .container{
     width: 100%;
     background-color: #1c1c1c;
+    flex-grow: 1;
     main{
     max-width: 1200px;
     margin: auto;
