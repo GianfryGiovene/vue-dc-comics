@@ -56,7 +56,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$blue-DC:#0282f9;
+@import "./variables";
 footer{
     width: 100%;
     .container:first-child{

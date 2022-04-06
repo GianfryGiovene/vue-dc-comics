@@ -22,7 +22,7 @@ export default {
 
 <style lang="scss" scoped>
 
-$blue-DC:#0282f9;
+@import "./variables";
 header{
     width: 1200px;
     margin: auto;
