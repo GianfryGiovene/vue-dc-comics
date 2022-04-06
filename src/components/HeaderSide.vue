@@ -24,7 +24,7 @@ export default {
 
 </script>
 
-<style lang="scss"scoped>
+<style lang="scss" scoped>
 $blue-DC:#0282f9;
 header{
     max-width: 1200px;

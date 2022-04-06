@@ -2,19 +2,21 @@
   <div id="app">
     <HeaderSide />
     <MainSide />
+    <FooterSide />
   </div>
 </template>
 
 <script>
-import HeaderSide from './components/HeaderSide.vue'
-import MainSide from './components/MainSide.vue'
-import FooterSide from './components/FooterSide.vue'
+import HeaderSide from './components/HeaderSide.vue';
+import MainSide from './components/MainSide.vue';
+import FooterSide from './components/FooterSide.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderSide,
     MainSide,
+    FooterSide,
     
     
   }
