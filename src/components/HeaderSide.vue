@@ -2,45 +2,42 @@
     <header>
         <img src="../assets/dc-logo.png" alt="dc-logo">
         <ul>
-            <li>CHARACTERS</li>
-            <li>COMICS</li>
-            <li>MOVIES</li>
-            <li>TV</li>
-            <li>GAMES</li>
-            <li>COLLECTIBLES</li>
-            <li>VIDEOS</li>
-            <li>FANS</li>
-            <li>NEWS</li>
-            <li>SHOP</li>
+            <li :key='index' v-for='(element,index) in navArray'>{{ element }}</li> 
         </ul>
     </header>
 </template>
 
 <script>
+
 export default {
     name: 'HeaderSide',
+    data: function(){
+        return{
+            navArray: ['CHARACTERS','COMICS','MOVIES','TV','GAMES','COLLECTIBLES','VIDEOS','FANS','NEWS','SHOP']
+        }
+    }
 }
-
 
 </script>
 
 <style lang="scss" scoped>
+
 $blue-DC:#0282f9;
 header{
-    max-width: 1200px;
+    width: 1200px;
     margin: auto;
     height: 100px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between;  
     img{
         width: 80px;
     }
     ul{
         list-style-type: none;
         display: flex;
+        gap: 10px;
         li{
-            padding: 5px;
             &:hover{
                 color: $blue-DC ;
                 border-bottom: 2px solid $blue-DC;

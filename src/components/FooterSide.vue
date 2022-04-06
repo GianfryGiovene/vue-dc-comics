@@ -4,41 +4,20 @@
             <div class="flex-wrap">
                 <div class="flex-wrap-column">
                 <ul>
-                    <li>DC COMICS</li>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>TV</li>
-                    <li>Games</li>
-                    <li>Videos</li>
-                    <li>News</li>
+                    <li :key='index' v-for="(element,index) in dcComics">{{ element }}</li>
+                    
                 </ul>
                 <ul>
-                    <li>SHOP</li>
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
+                    <li :key="index" v-for="(element,index) in shop">{{ element }}</li>
+                    
                 </ul>
                 <ul>
-                    <li>DC</li>
-                    <li>Terms of Use</li>
-                    <li>Privacy Policy (New)</li>
-                    <li>Ad Choices</li>
-                    <li>Advertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
+                    <li :key="index" v-for="(element,index) in dc">{{ element }}</li>
+                    
                 </ul>
                 <ul>
-                    <li>SITES</li>
-                    <li>DC</li>
-                    <li>MAD Magazine</li>
-                    <li>DC Kids</li>
-                    <li>DC Universe</li>
-                    <li>DC Power Visa</li>
+                    <li :key="index" v-for="(element,index) in sites">{{ element }}</li>
+                    >
                 </ul>
             </div>
             <img src="../assets/dc-logo-bg.png" alt="dc logo">
@@ -63,6 +42,14 @@
 <script>
 export default {
     name: 'FooterSide',
+    data: function(){
+        return{
+            dcComics: ['DC COMICS','Characters','Comics','Movies','TV','Games','Videos','News'],
+            shop: ['SHOP','Shop DC','Shop DC Collectibles'],
+            dc: ['DC','Terms of Use','Privacy Policy (New)','Ad Choices','Advertising','Jobs','Subscriptions','Talent Workshops','CPSC Certificates','Ratings','Shop Help','Contact Us'],
+            sites: ['SITES','DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa']
+            }
+    }
     
 }
 
@@ -98,10 +85,8 @@ footer{
                         font-size: 1.2rem;
                         margin-bottom: 20px;
                         color: #fff;
-                    }
-                
+                    } 
                 }
-            
             }
             img{
                 width: 500px;
