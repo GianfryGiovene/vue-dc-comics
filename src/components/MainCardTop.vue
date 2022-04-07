@@ -1,6 +1,6 @@
 <template>
     <div>   
-        Content goes here    
+        <span>Content goes here</span>   
     </div>
 </template>
 
@@ -13,10 +13,12 @@ export default {
 <style lang="scss" scoped>
 
 div{
+    height: 100%;
     vertical-align: middle;
-    
+    display: flex;
     color: #fff;
     max-width: 1200px;
     margin: auto;
+    align-items: center;
 }
 </style>

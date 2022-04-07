@@ -39,7 +39,6 @@ main{
         width: 100%;
         height: 55%;
         background-color: $blue-DC;
-        font-size: 1.6rem;
     }
 }
 </style>
