@@ -1,13 +1,20 @@
 <template>
     <div>
         <div :key="index" v-for="(card,index) in cards" class="card">
-            <img src="../assets/buy-comics-digital-comics.png" alt="">
+            <img :src="card.src" :alt="card.name">
             <span>{{ card.name }}</span>
         </div>
     </div>
 </template>
 
 <script>
+
+import digital from '../assets/buy-comics-digital-comics.png';
+import merchandise from '../assets/buy-comics-merchandise.png';
+import subscription from '../assets/buy-comics-subscriptions.png';
+import locator from '../assets/buy-comics-shop-locator.png';
+import powerVisa from '../assets/buy-dc-power-visa.svg';
+
 export default {
     name: 'MainCardBottom',
     data: function(){
@@ -15,28 +22,26 @@ export default {
             
             cards: [
                 {
-                    src: '../assets/buy-comics-digital-comics.png',
+                    src: digital,
                     name: 'DIGITAL COMICS'
                 },
                 {
-                    src: '../assets/buy-comics-merchandise.png',
+                    src: merchandise,
                     name: 'DC MERCHANDISE'
                 },
                 {
-                    src: '../assets/buy-comics-subscription.png',
+                    src: subscription,
                     name: 'SUBSCRIPTION'
                 },
                 {
-                    src: '../assets/buy-comics-shop-locator.png',
-                    name: 'COMIC CHOP LOCATOR'
+                    src: locator,
+                    name: 'COMIC SHOP LOCATOR'
                 },
                 {
-                    src: '../assets/buy-dc-power-visa.png',
+                    src: powerVisa,
                     name: 'DP POWER VISA'
                 }
             ],
-            
-
         }
     }
 
@@ -55,9 +60,7 @@ div{
     gap: 20px;
     .card{
         display: flex;
-        gap: 10px;
-        
+        gap: 10px; 
     }
 }
-
 </style>

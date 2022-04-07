@@ -34,10 +34,13 @@ header{
         width: 80px;
     }
     ul{
+        height: 100%;
+        align-items:center;
         list-style-type: none;
         display: flex;
         gap: 10px;
         li{
+
             &:hover{
                 color: $blue-DC ;
                 border-bottom: 2px solid $blue-DC;

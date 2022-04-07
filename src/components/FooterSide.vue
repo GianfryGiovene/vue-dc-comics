@@ -17,7 +17,7 @@
                 </ul>
                 <ul>
                     <li :key="index" v-for="(element,index) in sites">{{ element }}</li>
-                    >
+                    
                 </ul>
             </div>
             <img src="../assets/dc-logo-bg.png" alt="dc logo">
@@ -28,11 +28,7 @@
                 <button>SIGN-UP NOW!</button>
                 <ul>
                     <li>FOLLOW US</li>
-                    <li><img src="../assets/footer-facebook.png" alt=""></li>
-                    <li><img src="../assets/footer-twitter.png" alt=""></li>
-                    <li><img src="../assets/footer-youtube.png" alt=""></li>
-                    <li><img src="../assets/footer-pinterest.png" alt=""></li>
-                    <li><img src="../assets/footer-periscope.png" alt=""></li>
+                    <li :key="index" v-for="(element,index) in followUS"><img :src="element.img" :alt="element.description"></li>
                 </ul>
             </div>
         </div>
@@ -40,6 +36,11 @@
 </template>
 
 <script>
+import facebook from '../assets/footer-facebook.png';
+import twitter from '../assets/footer-twitter.png';
+import youTube from '../assets/footer-youtube.png';
+import pinterest from '../assets/footer-pinterest.png';
+import periscope from '../assets/footer-periscope.png';
 export default {
     name: 'FooterSide',
     data: function(){
@@ -47,7 +48,28 @@ export default {
             dcComics: ['DC COMICS','Characters','Comics','Movies','TV','Games','Videos','News'],
             shop: ['SHOP','Shop DC','Shop DC Collectibles'],
             dc: ['DC','Terms of Use','Privacy Policy (New)','Ad Choices','Advertising','Jobs','Subscriptions','Talent Workshops','CPSC Certificates','Ratings','Shop Help','Contact Us'],
-            sites: ['SITES','DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa']
+            sites: ['SITES','DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa'],
+            followUS: [
+                {
+                    img:facebook,
+                    description:'facebook'
+                },
+                {
+                    img:twitter,
+                    description:'twitter'
+                },
+                {
+                    img:youTube,
+                    description: 'youtube'
+                },
+                {
+                    img:pinterest,
+                    description: 'pinterest'
+                },
+                {
+                    img:periscope,
+                    description: 'periscope'
+                }],
             }
     }
     
