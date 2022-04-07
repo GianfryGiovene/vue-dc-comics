@@ -16,9 +16,7 @@ export default {
   components: {
     HeaderSide,
     MainSide,
-    FooterSide,
-    
-    
+    FooterSide,  
   }
 }
 </script>
@@ -31,7 +29,6 @@ export default {
 }
 #app {
   width: 100%;
-  height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; 

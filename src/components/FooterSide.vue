@@ -51,28 +51,28 @@ export default {
             sites: ['SITES','DC','MAD Magazine','DC Kids','DC Universe','DC Power Visa'],
             followUS: [
                 {
-                    img:facebook,
+                    img: facebook,
                     description:'facebook'
                 },
                 {
-                    img:twitter,
+                    img: twitter,
                     description:'twitter'
                 },
                 {
-                    img:youTube,
+                    img: youTube,
                     description: 'youtube'
                 },
                 {
-                    img:pinterest,
+                    img: pinterest,
                     description: 'pinterest'
                 },
                 {
-                    img:periscope,
+                    img: periscope,
                     description: 'periscope'
                 }],
-            }
+        }
     }
- 
+    
 }
 
 </script>
@@ -84,7 +84,6 @@ footer{
     .container:first-child{
         width: 100%;
         background-image: url('../assets/footer-bg.jpg');
-        
         .flex-wrap{
             display: flex;
             max-width: 1200px;
@@ -137,7 +136,6 @@ footer{
             padding: 8px;
             background: none ;
             cursor: pointer;
-            
         }
         ul{
             list-style-type: none;

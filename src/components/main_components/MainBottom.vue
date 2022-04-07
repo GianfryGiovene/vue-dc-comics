@@ -19,7 +19,6 @@ export default {
     name: 'MainCardBottom',
     data: function(){
         return {
-            
             cards: [
                 {
                     src: digital,
@@ -61,6 +60,9 @@ div{
     .card{
         display: flex;
         gap: 10px; 
+        img{
+            height: 50px;
+        }
     }
 }
 </style>
