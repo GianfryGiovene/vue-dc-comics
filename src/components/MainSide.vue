@@ -11,8 +11,8 @@
 </template>
 
 <script>
-import MainCardTop from './MainCardTop.vue';
-import MainCardBottom from './MainCardBottom.vue';
+import MainCardTop from './main_components/MainCardTop.vue';
+import MainCardBottom from './main_components/MainCardBottom.vue';
 
 export default {
     name: 'MainSide',

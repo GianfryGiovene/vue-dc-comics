@@ -9,11 +9,11 @@
 
 <script>
 
-import digital from '../assets/buy-comics-digital-comics.png';
-import merchandise from '../assets/buy-comics-merchandise.png';
-import subscription from '../assets/buy-comics-subscriptions.png';
-import locator from '../assets/buy-comics-shop-locator.png';
-import powerVisa from '../assets/buy-dc-power-visa.svg';
+import digital from '@/assets/buy-comics-digital-comics.png';
+import merchandise from '@/assets/buy-comics-merchandise.png';
+import subscription from '@/assets/buy-comics-subscriptions.png';
+import locator from '@/assets/buy-comics-shop-locator.png';
+import powerVisa from '@/assets/buy-dc-power-visa.svg';
 
 export default {
     name: 'MainCardBottom',
